@@ -1,0 +1,23 @@
+hush
+
+d1 $ wedge (1/2) (s "909bd_tum*2 arpy*3 cp 909sd*2") (s "odx [2600noise modnoisei:1]*2 909ch 909oh")
+
+d1 silence
+
+d2 $ brak $ s "{909bd_s:2(4,4), ~ <909sd:1 909sd:2*2>}" # shape 0.8
+
+d2 silence 
+
+d3 $ slow 5 $ timeCat [
+     (3, n "0e 0a 0e 0b" # s "sin"),
+     (2, n "5e 5g 5a 5b" # s "sinswarm"),
+     (3, n "2e 1a 2e 4b" # s "modbd_sub"),
+     (2, n "8e 8g 8a 8b" # s "sinswarm")
+] # shape (sine * 0.4) # room (square * 100)
+
+d3 silence
+
+
+d4 $ slow 4 $ n "1 2 5 3" # s "superhammond" i
+
+d4 silence

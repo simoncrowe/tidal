@@ -1,0 +1,13 @@
+hush
+
+d1 $ s "modbd_909:7(4,4)" # shape 0.9
+
+d1 silence
+
+d2 $ s "~ ~ ~ <modsd_alien:4 [modsd_909:1 modsd_909]>" # shape 0.9
+
+d2 silence
+
+d3 $ "<modch_empty:4(16,4) modch_empty:3(8, 16)>"  # pan sine 
+
+d4 $ fast 2 $ n "e3 a3 e3 b3 <[g3 a2] [a2 g1]>" # s "acid309" # room 4

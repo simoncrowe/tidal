@@ -1,0 +1,5 @@
+setcps (122/60/4)
+
+d1 $ s "modbd_skin:11(3,5)"
+
+d2 $ s "~ modbd_sub:2 ~ modbd_sub:1"

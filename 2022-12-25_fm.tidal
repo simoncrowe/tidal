@@ -1,0 +1,17 @@
+
+d1
+$ slow 4
+$ "superfm*8"
+# fmamp 1 0
+# fmamp 2 0
+# fmamp 3 0
+# fmamp 4 1
+# fmamp 5 0
+# fmamp 6 0
+# fmmod 2 1 "1 0.5 0.75"
+# fmmod 3 2 "0.4 1 0.25"
+# fmfeedback 1
+# fmratio 1 "0.5 0.75 1.23"
+# fmratio 2 "0.04 0.05 0.01 0.003"
+# fmratio 3 "0.41"
+# fmratio 4 "0.44"

@@ -1,0 +1,28 @@
+setcps (130/60/4)
+
+hush
+
+d1 $ s "{909rim(4,4)}"
+
+d1 silence
+
+d2 $ n "8 3 8 1*2"  # s "909bd_v"
+
+d2 silence
+
+d3 $ s "[~ 909clap_v:4] * 4"
+
+d4 silence
+
+d4 $ n "0*2 1*3" # s "909tom"
+
+d5 silence
+
+d5 $ s "909ch(8,4)"
+
+d5 $ s "909oh(8,4)" # gain 0.85
+
+d6 silence
+
+d6 $ s "909cy(8,4)"
+
