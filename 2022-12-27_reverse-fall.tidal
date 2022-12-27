@@ -1,0 +1,43 @@
+setcps (130/60/4)
+
+d1
+$ s "superfm*2"
+# n 0.5
+# fmamp 1 0.8
+# fmamp 2 4
+# fmamp 3 2
+# fmamp 4 2 
+# fmamp 5 0
+# fmamp 6 0
+# fmfeedback 1
+# fmmod 1 1 "2.71"
+# fmmod 2 3 "5"
+# fmmod 4 2 "5"
+# fmratio 1 "0.1"
+# fmratio 2 "0.75"
+# fmratio 3 "0.1"
+# fmratio 4 "0.2"
+# lfmer 1 [0.25, 0.3, 0.25, 0.25]
+# lfmel 1 [0.5, 1, 0.75, 0.1]
+# lfmer 2 [0.1, 0.1, 0.5, 0.4]
+# lfmel 2 [0.1, 0.9, 1, 1]
+# lfmer 3 [0.25, 0.1, 0.25, 0.25]
+# lfmel 3 [0.1, 0.7, 1, 1]
+
+d2
+$ n "<10(4,4) 10(4,4) 10(4,4) [10 10 10 [10*2]]>"
+# s "modbd_909"
+# shape 0.5
+
+d3
+$ slow 32
+$ s "2600noise:42*2"
+# speed 0.01
+# smear "2"
+# gain 1.4
+
+d4
+$ slow 4
+$ s "909ch_v:11*64"
+# pan sine
+# gain 0.85
