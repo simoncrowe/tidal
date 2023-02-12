@@ -1,0 +1,24 @@
+setcps (130/60/4)
+
+hush
+
+d1 $ s "supersaw:0" # pitch1 0.04 # resonance 2
+
+d1 silence
+
+d2 $ s "supernoise:0" # voice 0.5 # gain 0.6 # slide 0.6 
+
+d2 silence
+
+d3 
+$ slow 2
+$ s "superfm*4"
+# n 0
+# fmamp 1 1
+# fmamp 2 1 
+# fmamp 3 0
+# fmamp 4 0
+# fmamp 5 0
+# fmamp 6 0
+# fmmod 1 2 "1 0.5"
+# fmratio 1 "0.75 6"
