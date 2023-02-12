@@ -1,0 +1,11 @@
+d1 
+$ s "<808bd_sp1200:23(4, 4) 808bd_sp1200:23(3, 4)>"
+# shape 0.2
+
+d2 $ s "[~ 808ch_tape:13]*4"
+
+d4
+$ slow 1 
+$ "~ ~ ~<808sd_punch:5 808sd_punch:6 808sd_punch:4  <808sd_chrisp:3*2 808cy_var:5>>" 
+# shape 0.3 
+# room 0.2

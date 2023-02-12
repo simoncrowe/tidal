@@ -38,6 +38,6 @@ $ s "2600noise:42*2"
 
 d4
 $ slow 4
-$ s "909ch_v:11*64"
+$ s "909ch_var:11*64"
 # pan sine
 # gain 0.85
