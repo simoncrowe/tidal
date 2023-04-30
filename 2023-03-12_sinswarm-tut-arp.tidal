@@ -1,0 +1,6 @@
+setcps 0.5625
+
+d1 $ chunk 4 (|- note 5) $ jux rev $ 
+  arp "<pinkyup down thumbup up>" $ n "<c'maj'4 e4'min'8 f4'maj'4>"
+  # sound "sinswarm"
+  # sustain 2

@@ -2,8 +2,8 @@ setcps (150/60/4)
 
 d1
 $ slow 2 
-$ "superfm*16"
-# n "a3 [b3 d3] a4 [c4 d4] e4 [g4 h4] a4 [<c4 ~> d4]"
+$ n "a3 [b3 d3] a4 [c4 d4] e4 [g4 h4] a4 [<c4 ~> d4]"
+# s "superfm"
 # fmamp 1 1
 # fmamp 2 0
 # fmamp 3 0
@@ -17,4 +17,4 @@ $ "superfm*16"
 
 
 d2
-$ s "909bd_tum:2(4, 4)"
+$ s "909bd_tubem:2(4, 4)"

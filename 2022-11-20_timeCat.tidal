@@ -1,6 +1,6 @@
 hush
 
-d1 $ wedge (1/2) (s "909bd_tum*2 arpy*3 cp 909sd*2") (s "odx [2600noise modnoisei:1]*2 909ch 909oh")
+d1 $ wedge (1/2) (s "909bd_tubem*2 arpy*3 cp 909sd*2") (s " [2600noise modnoise:1]*2 909ch 909oh")
 
 d1 silence
 
@@ -18,6 +18,6 @@ d3 $ slow 5 $ timeCat [
 d3 silence
 
 
-d4 $ slow 4 $ n "1 2 5 3" # s "superhammond" i
+d4 $ slow 4 $ n "1 2 5 3" # s "superhammond" 
 
 d4 silence
