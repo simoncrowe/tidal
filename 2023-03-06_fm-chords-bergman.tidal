@@ -1,43 +1,46 @@
 setcps (150/60/4)
 
 d1
-$ slow 6
+$ slow 6 
 $ arp "<thumbdown down pinkydown up>"
 $ chunk 3 (shuffle 2) 
 $ n "a'min'5 e'maj'4 f'minorsharp5'7 d'maj'5 a'maj'8 e'maj'4"
-# s "sin"
-# fmamp 1 0.8
-# fmamp 2 0.9
-# fmamp 3 0.7
-# fmamp 4 1
-# fmamp 5 0.7
-# fmamp 6 0.2 
-# fmmod 1 2 "0.33 0.66"
-# fmmod 2 1 "<0.88 1.22>" 
-# fmmod 2 2 "<2 1 1.5 0.6>"
-# fmmod 2 3 " <0.5 0.25>"
-# fmmod 1 4 " <0.25 0.5>"
-# fmmod 2 5 " <0.25 0.125>"
+# s "sinswarm"
+# fmamp 1 0
+# fmamp 2 1
+# fmamp 3 0 
+# fmamp 4 0 
+# fmamp 5 0
+# fmamp 6 0 
+# fmmod 2 1 "<2>"
+# fmmod 1 1 "<1.5 3>"
+-- # fmmod 2 2 "<2 4>"
 # fmfeedback 1
-# fmratio 1 "0.125"
-# fmratio 2 "<0.05 0.025>"
-# fmratio 4 "0.5"
-# fmratio 5 "1"
-# fmratio 5 "2"
-# fmratio 6 "4"
-# sustain 2 
-# gain 0.4 
+# fmratio 1 "<0.001 0.005>"
+# fmratio 2 "0.5"
+# sustain "<0.4 0.8 1.2>"
+# gain 1
 
 d1 silence
 
+
 d2
 $ n "<9 9*2 9 ~>"
-# s "modbd_sub"
+# s "modbd_909"
+# room 1
+# gain 0.8
 
 d2 silence
 
 d3
-$ slow 1
-$ s "persona:2"
+$ n "<11(5, 8) 2(3,8)>"
+# s "modtom_noise"
+# shape 0.6
+# gain 0.8
 
-d3 silence
+d4
+$ slow 3
+$ s "persona:0"
+# gain 1
+
+d4 silece
