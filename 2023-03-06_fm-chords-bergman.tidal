@@ -1,46 +1,47 @@
 setcps (150/60/4)
 
-d1
-$ slow 6 
-$ arp "<thumbdown down pinkydown up>"
-$ chunk 3 (shuffle 2) 
-$ n "a'min'5 e'maj'4 f'minorsharp5'7 d'maj'5 a'maj'8 e'maj'4"
-# s "sinswarm"
-# fmamp 1 0
-# fmamp 2 1
-# fmamp 3 0 
-# fmamp 4 0 
-# fmamp 5 0
-# fmamp 6 0 
-# fmmod 2 1 "<2>"
-# fmmod 1 1 "<1.5 3>"
--- # fmmod 2 2 "<2 4>"
-# fmfeedback 1
-# fmratio 1 "<0.001 0.005>"
-# fmratio 2 "0.5"
-# sustain "<0.4 0.8 1.2>"
+d1 
+$ slow 6
+$ s "persona:0"
+# speed "<0.98 0.89 1>"
 # gain 1
 
 d1 silence
 
-
 d2
-$ n "<9 9*2 9 ~>"
-# s "modbd_909"
-# room 1
-# gain 0.8
+$ slow 4
+$ arp "<thumbdown down pinkydown up>"
+$ chunk 2 (shuffle 2) 
+$ n "a'min'4 c'maj'5 g'maj'4 a'min'5"
+# s "superfm"
+# fmamp 1 0
+# fmamp 2 1
+# fmamp 3 0
+# fmamp 4 0
+# fmamp 5 0
+# fmamp 6 0 
+# fmmod 2 1 "<1.5 1 0.5>"
+# fmmod 1 1 "<0.5 1 1.5 2>"
+# fmfeedback 1 
+# fmratio 1 "<0.001 0.005 0.003>"
+# fmratio 2 "<0.5 1>"
+# sustain "<1 1.5 2>"
+# gain 1
 
 d2 silence
 
 d3
-$ n "<11(5, 8) 2(3,8)>"
-# s "modtom_noise"
-# shape 0.6
-# gain 0.8
-
-d4
-$ slow 3
-$ s "persona:0"
+$ n "<2*2 6*4 1*2 7*4>"
+# s "808bd_mpc60noise"
+# room 0
 # gain 1
 
-d4 silece
+d3 silence
+
+d4
+$ n "<0*8 11(5, 8) 13(3,8)>"
+# s "808ch_col"
+# shape 0.3
+# pan (slow 1.333 $ sine)
+
+d4 silence
