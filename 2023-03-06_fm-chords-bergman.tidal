@@ -1,7 +1,7 @@
 setcps (150/60/4)
 
-d1 
-$ slow 16
+d1
+$ slow 20
 $ s "persona:0"
 # speed "<0.9 0.95 1>"
 # gain 1
@@ -21,7 +21,7 @@ $ n "a'min'4 g'maj'5 g'maj'4 e'min'5"
 # fmamp 5 0
 # fmamp 6 0 
 # fmmod 2 1 "<0.25 0.5 1>"
-# fmmod 1 1 "<0 0.5 1 1.5>"
+# fmmod 1 1 "<0 1 0.5 1.5>"
 # fmfeedback 1
 # fmratio 1 "<0.001 0.005>"
 # fmratio 2 "<0.5 1>"
@@ -47,7 +47,7 @@ d4
 $ n "<2*2 6*4 1*2 7*4>"
 # s "808bd_mpc60noise"
 # room 0
-# gain 0.8
+# gain 0.75
 
 d4 silence
 
@@ -59,3 +59,11 @@ $ n "<19*8? 10(5, 8) 18*8? 10(5, 8)>"
 # pan (slow 0.8 $ sine)
 
 d5 silence
+
+d6
+$ slow 4
+$ s "persona:1"
+# speed "<0.9 0.95 1>"
+# gain 1
+
+d6 silence
