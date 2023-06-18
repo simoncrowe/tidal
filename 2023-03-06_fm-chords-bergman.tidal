@@ -37,7 +37,7 @@ $ slow 4
 $ arp "<thudown pinkydown up>"
 $ chunk 2 (shuffle 2) 
 $ n "a4'min'5 g3'maj'4 f3'maj'5 e4'min'4"
-# s "sinswarm"
+# s "sins"
 # gain 1
 # sustain "<2 1.5 1>"
 
@@ -46,8 +46,8 @@ xfade 3 silence
 d4
 $ n "<2*2 6*4 1*2 7*4>"
 # s "808bd_mpc60noise"
-# room 0
-# gain 0.75
+# room 0.5
+# gain 0.8
 
 d4 silence
 
