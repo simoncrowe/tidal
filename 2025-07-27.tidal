@@ -1,0 +1,11 @@
+setcps (120 / 60/ 4)
+
+d1 $ n (scale "dorian" $ "3 4 5 8 2 5 6 3" |-12 ) 
+  # sound "chainsaw"
+  # sustain 1.5 
+  
+
+
+d2 $ s "909bd_var:4(4,4)"
+
+d3 $ s "909sd:18(2,4)"
