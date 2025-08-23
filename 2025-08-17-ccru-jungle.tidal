@@ -1,0 +1,23 @@
+setcps (175/60/4) 
+
+d1 $ splice "<32 64>" 
+(slow "<8 [16 8] [4 16 8]>" $ shuffle "<16 32>" (run "<32 64>")) 
+$ sound "amen" 
+# pan rand 
+# gain 0.8
+# room (slow 4 $ sine * 20)
+
+d2 $ s "808bd_deep:3(3,8)"
+
+d2 silence
+
+d3 $ s "808cy_1:4(2,5)" # gain 0.7
+
+d4 
+$ splice 32 
+(slow "<16 64 32>"
+  $ shuffle 16
+  (run 32))
+$ s "ccru:0"
+
+hush
