@@ -1,0 +1,31 @@
+setcps(175/60/4)
+
+d1 
+$ n "<g1? a2?>" 
+# s "grind" 
+# gain "0.6"
+# sustain "5 7 9"
+
+xfade 1 silence
+
+d2
+$ jux palindrome
+$ splice "32" (slow "4" $ shuffle "<8 16>" (run 32))
+$ s "amen:0"
+# gain "0.75 0.8 0.7"
+# pan rand
+
+
+d3
+$ splice "16" (slow "<32 16 [64 52 32]>" $ shuffle "16" (run 16))
+$ s "ccru/16"
+# gain 0.9
+# room sine
+
+xfade 3 silence
+
+d4 $ sound "808bd_mpc60noise:5(3,8)"
+
+d5 $ sound "808sd_punch(5,8)" # gain "0.7 0.8"
+
+

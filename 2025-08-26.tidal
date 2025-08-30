@@ -1,0 +1,36 @@
+setcps (175/60/4)
+
+d1
+$ s "<grind:af1 grind:ds0>/4"
+# sustain (10 + (5 * rand))
+
+
+xfade 1
+$ rarely (jux rev)
+$ splice "16" (slow "<4 8 8>" $ shuffle "<8 16>" $ run "16")
+$ n "<0 2 1 >"
+# s "amen"
+# pan rand
+# gain "0.75 0.6 0.7"
+
+d1 silence
+
+d2 
+$ splice "32" (slow "4" $ shuffle "<8 16>" $ run "32")
+$ n "<0 >"
+# s "amen"
+# pan sine
+# gain "0.55 0.5 0.6"
+
+d3
+$ s "ccru:1/32"
+# gain 1.5
+
+d4 
+$ s "{808bd_moog:14(3,8), 808sd_air:4*8?, 808oh:5*16?}"
+# shape "0.25 0.2"
+
+d5
+$ n "af0/2"
+# s "cthulu"
+
