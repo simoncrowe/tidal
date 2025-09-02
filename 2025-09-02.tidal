@@ -1,0 +1,59 @@
+setcps(175/60/4)
+
+d1
+$ n "<ef1 as2>?"
+# s "grind"
+# sustain "<8 13 21>"
+
+xfade 1
+$ splice 16 (slow "4" $ shuffle "<8 4 16>" $ run "16")
+$ sometimes (jux rev)
+$ n "<0 0 1 2 0 3 0 4 0 5>"
+# s "amen"
+# pan rand
+# shape "[0.1 0.15]*8"
+
+xfade 1 silence
+
+d2
+$ splice 32 (slow "<4 4 [4 2]>" $ shuffle "<16 32>" $ run "32")
+$ rarely (jux (# room 0.5))
+$ n "<0 6 0 7 0 8 0 9 0 10>"
+# s "amen"
+# pan sine
+# gain "[0.76 0.7 0.8 0.75] * 4"
+
+d3
+$ s "<808bd_deep:9(5,8), 808bd_moog:0(3,8)>"
+# shape "0.3 0.35"
+
+d4
+$ s "{808sd_air:2*8?, 808ch:1*16?}"
+
+d5
+$ splice 16 (slow "<32 64 128>" $ shuffle "<8 16>" $ run "16")
+$ s "ccru:2/32"
+
+xfade 0 silence
+
+xfade 1 silence
+
+xfade 2 silence
+
+xfade 3 silence
+
+xfade 4 silence
+
+xfade 5 silence
+
+d6
+$ s "ccru:1/32"
+# gain "1.2"
+
+xfade 6 silence
+
+d7
+$ n "<fs0 cf1 bs2 af3>?"
+# s "cthulhu"
+# sustain "<10 20 30>"
+# gain 1.1
