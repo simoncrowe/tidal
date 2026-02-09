@@ -1,0 +1,66 @@
+setcps(120/60/4)
+
+d1
+$ slow 4
+$ n "a1'min'4 g3'maj'5"
+# sustain "3.5 4.5"
+# s "tape"
+# pan "0"
+
+d1 silence
+
+d2
+$ slow 4
+$ arp "<thudown pinkydown up>"
+$ chunk 2 (shuffle 2) 
+$ n "a4'min'5 g3'maj'4 f3'maj'5 e4'min'4"
+# s "tape"
+# gain 1
+# sustain "<2 1.5 1>"
+# pan "0"
+# gain "0.6"
+
+d2 silence
+
+d3
+$ slow 16
+$ s "videodrome:2"
+# pan 0.9
+# gain 0.5
+
+d3 silence
+
+xfade 1 silence
+
+xfade 2 silence
+
+hush
+
+d4 
+$ degradeBy 0.3
+$ n (scale "aeolian" $ (fmap ([0, 1, 2, 3, 4, 5, 6]!!)
+       $ markovPat 16 0 [
+       [0.34,0.06,0.16,0.06,0.20,0.10,0.08]
+  ,    [0.26,0.18,0.20,0.12,0.14,0.06,0.04]
+  ,    [0.12,0.10,0.30,0.16,0.18,0.08,0.06]
+  ,    [0.10,0.12,0.18,0.26,0.18,0.10,0.06]
+  ,    [0.18,0.06,0.18,0.10,0.28,0.12,0.08]
+  ,    [0.22,0.04,0.10,0.06,0.18,0.26,0.14]
+  ,    [0.28,0.02,0.08,0.04,0.16,0.18,0.24]
+] )|-12 )
+# sound "chainsaw"
+# sustain "[1 1.8 1 1.25] * 4" 
+# gain "[0.1 0.8 0.85 0.8] * 4"
+-- # room (0.2 + (sine*0.25)) 
+
+d4 silence
+
+d5 $ n "[5 ~ ~ ~]*4" # s "modbd_909"
+
+d5 silence
+
+d6 $ n "<9(2,4) 10(2,4) 9(2,4) 10(3,4)>" # s"modsd_noise" # gain 0.7
+
+d6 silence
+
+d7 $ s "[909ch:3 909ch:3 909ch:1 909ch:1]*4" #  gain "[0.4 0.5]*8" # pan (0.4 + (rand * 0.2))

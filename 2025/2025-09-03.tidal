@@ -1,0 +1,16 @@
+setcps(175/60/4)
+
+d1
+$ n "<ef2 as0 af1>?"
+# s "grind"
+# sustain "<8 13 24>
+
+
+xfade 1
+$ splice 16 (slow "4" $ shuffle "<8 4 16>" $ run  "16")
+$ rarely (jux rev)
+$ n "0"
+# s "amen"
+
+
+
