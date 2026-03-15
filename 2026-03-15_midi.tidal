@@ -23,3 +23,22 @@ $ n "<0*8? 0*4>"
 # s "midi" 
 # midichan 3 
 # sustain 0.01
+
+d5
+$ slow 4
+$ arp "<thumbdown pinkydown up>"
+$ chunk 2 (shuffle 2) 
+$ n "a'min'4 g'maj'5 g'maj'4 e'min'5"
+# s "midi"
+# midichan 4
+# sustain "<1 1.5 2>"
+
+d6
+$ slow 4
+$ arp "<thudown pinkydown up>"
+$ chunk 2 (shuffle 2) 
+$ n "a4'min'5 g3'maj'4 f3'maj'5 e4'min'4"
+# s "midi"
+# midichan 5
+# sustain "<2 1.5 1>"
+
