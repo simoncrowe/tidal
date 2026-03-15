@@ -1,0 +1,25 @@
+setcps(130/60/4)
+
+d1
+$ n "0(4,4)" 
+# s "midi" 
+# midichan 0
+# sustain 0.01
+
+d2
+$ n "0(2,4)" 
+# s "midi" 
+# midichan 1
+# sustain 0.2
+
+d3
+$ n "<0*16 0*16?>" 
+# s "midi" 
+# midichan 2
+# sustain 0.01
+
+d4
+$ n "<0*8? 0*4>" 
+# s "midi" 
+# midichan 3 
+# sustain 0.01
